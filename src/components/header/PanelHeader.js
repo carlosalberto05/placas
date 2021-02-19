@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container } from "react-bootstrap";
-import whatsapp from "../assets/watsapp.png";
+import whatsapp from "../../assets/watsapp.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 

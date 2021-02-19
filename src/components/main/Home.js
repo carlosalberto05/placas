@@ -1,13 +1,13 @@
 import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
-import "../App.css";
+import "../../App.css";
 
 export const Home = () => {
   return (
-    <>
-      <Jumbotron className="jm-bg " fluid id="home">
+    <div id="home">
+      <Jumbotron className="jm-bg " fluid>
         <Container className="banner-img"></Container>
       </Jumbotron>
-    </>
+    </div>
   );
 };

@@ -1,8 +1,8 @@
 import React from "react";
-import { Navbar, Container, Nav, NavLink } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-scroll";
 
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 
 export const NavBarHeader = () => {
   return (
@@ -10,9 +10,7 @@ export const NavBarHeader = () => {
       <Container>
         <Navbar.Brand>
           <Link
-            activeClassName="active"
             className="cursor"
-            exact
             spy={true}
             to="home"
             smooth={true}
@@ -29,9 +27,7 @@ export const NavBarHeader = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Link
-              activeClassName="active"
               className="nav-item nav-link text-dark font-weight-bold h5 mr-5 cursor"
-              exact
               spy={true}
               to="galeria"
               smooth={true}
@@ -41,9 +37,7 @@ export const NavBarHeader = () => {
             </Link>
 
             <Link
-              activeClassName="active"
               className="nav-item nav-link text-dark font-weight-bold h5 mr-5 cursor"
-              exact
               spy={true}
               to="products"
               smooth={true}
@@ -53,9 +47,7 @@ export const NavBarHeader = () => {
             </Link>
 
             <Link
-              activeClassName="active"
               className="nav-item nav-link text-dark font-weight-bold h5 mr-5 cursor"
-              exact
               spy={true}
               to="contacto"
               smooth={true}
