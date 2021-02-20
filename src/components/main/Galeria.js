@@ -1,9 +1,9 @@
 import React from "react";
 import { CardDeck, Card, Container } from "react-bootstrap";
-import willi from "../assets/willi.PNG";
-import jordi from "../assets/jordi.PNG";
-import mozart from "../assets/mozart.JPG";
-import "../App.css";
+import jordi from "../../assets/jordi.PNG";
+import willi from "../../assets/willi.PNG";
+import mozart from "../../assets/mozart.JPG";
+import "../../App.css";
 
 export const Galeria = () => {
   return (

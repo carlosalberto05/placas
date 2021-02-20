@@ -4,7 +4,7 @@ import "../../App.css";
 
 export const Home = () => {
   return (
-    <div id="home">
+    <div id="home" className="position-relative">
       <Jumbotron className="jm-bg " fluid>
         <Container className="banner-img"></Container>
       </Jumbotron>
