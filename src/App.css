@@ -18,7 +18,13 @@
 }
 
 /* Productos */
-
-.jb-productos {
+.jm-carousel {
   background-color: white;
+}
+
+.stilos-carousel {
+}
+
+.stilos-carousel-caption {
+  color: black;
 }
