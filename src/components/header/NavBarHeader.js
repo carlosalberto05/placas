@@ -52,6 +52,17 @@ export const NavBarHeader = () => {
             <Link
               className="nav-item nav-link text-dark font-weight-bold h5 mr-5 cursor"
               spy={true}
+              to="preguntas"
+              offset={-170}
+              smooth={true}
+              duration={1000}
+            >
+              Preguntas Frecuentes
+            </Link>
+
+            <Link
+              className="nav-item nav-link text-dark font-weight-bold h5 mr-5 cursor"
+              spy={true}
               to="contacto"
               offset={-170}
               smooth={true}

@@ -1,7 +1,8 @@
 import React from "react";
-import { Contacto } from "./main/Contacto";
+
 import { Galeria } from "./main/Galeria";
 import { Home } from "./main/Home";
+import { Preguntas } from "./main/Preguntas";
 import { Products } from "./main/Products";
 
 export const Main = () => {
@@ -10,7 +11,7 @@ export const Main = () => {
       <Home />
       <Galeria />
       <Products />
-      <Contacto />
+      <Preguntas />
     </main>
   );
 };

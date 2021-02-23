@@ -5,7 +5,6 @@ import jordi from "../../assets/jordi.PNG";
 import willi from "../../assets/willi.PNG";
 import mozart from "../../assets/mozart.JPG";
 import placagato3 from "../../assets/placagato3.JPG";
-import toto from "../../assets/toto.JPG";
 import huesos from "../../assets/huesos.JPG";
 import "../../App.css";
 
