@@ -6,13 +6,10 @@ export const Header = () => {
   const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
-    const currentScroll = window.pageYOffset;
-    console.log(currentScroll);
-
     const isScroll = window.scrollY;
 
-    if (isScroll >= 162) {
-      setVisible(false);
+    if (isScroll >= 1) {
+      setVisible(false); // mientras haga scroll se oculta el panel
     } else {
       setVisible(true);
     }
@@ -25,10 +22,6 @@ export const Header = () => {
   }, [visible]);
 
   return (
-    // <header className="sticky-top">
-    //   {visible && <PanelHeader />}
-    //   <NavBarHeader />
-    // </header>
     <header className="sticky-top">
       {visible && <PanelHeader />}
       <NavBarHeader />

@@ -11,24 +11,28 @@ export const Preguntas = () => {
           <Card>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                ¿Qué tipo de material utilizan?
+                ¿Que material utilizamos?
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
-              <Card.Body>El material es un plastico llamado PLA</Card.Body>
+              <Card.Body>
+                El material es un plastico llamado PLA(poliácido láctico) Es un
+                termoplástico cuyos materiales de base se obtienen a partir de
+                almidón de maíz. Se utiliza ampliamente en la impresión 3D.
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                ¿De qué tamaño son las placas?
+                ¿Cuál es el tamaño de las placas?
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
-                Varían dependiendo del modelo, el modelo del hueso más pequeño
-                tiene una medida de 60mm x 24mm, el mediano de 75mm x 30mm y el
-                grande 90mm x 36mm
+                Varían dependiendo del modelo, por ejemplo en el caso del
+                huesito las placas pequeñas miden 60x24mm, las medianas 75x30mm,
+                y las grandes 90x30mm
               </Card.Body>
             </Accordion.Collapse>
           </Card>
