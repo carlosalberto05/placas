@@ -20,11 +20,37 @@
 /* Productos */
 .jm-carousel {
   background-color: white;
+  padding-top: 0;
 }
 
-.stilos-carousel {
+.carousel__bg {
+  background-image: url("./assets/mod1.jpeg");
 }
 
-.stilos-carousel-caption {
-  color: black;
+.carousel__content {
+  width: 70%;
+  height: 90%;
+}
+
+.carousel__content-row {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__content-imagenes {
+  width: 80%;
+}
+
+.carousel_model-name {
+  font-size: 60px;
+  margin-bottom: 3rem;
+}
+
+.carousel_model-description {
+  font-size: 35px;
+  text-align: left;
 }

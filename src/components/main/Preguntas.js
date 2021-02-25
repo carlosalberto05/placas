@@ -10,7 +10,12 @@ export const Preguntas = () => {
         <Accordion defaultActiveKey="0">
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+              <Accordion.Toggle
+                as={Button}
+                variant="link"
+                eventKey="0"
+                className="text-decoration-none text-dark"
+              >
                 ¿Que material utilizamos?
               </Accordion.Toggle>
             </Card.Header>
@@ -24,7 +29,12 @@ export const Preguntas = () => {
           </Card>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
+              <Accordion.Toggle
+                as={Button}
+                variant="link"
+                eventKey="1"
+                className="text-decoration-none text-dark"
+              >
                 ¿Cuál es el tamaño de las placas?
               </Accordion.Toggle>
             </Card.Header>
@@ -38,7 +48,12 @@ export const Preguntas = () => {
           </Card>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="2">
+              <Accordion.Toggle
+                as={Button}
+                variant="link"
+                eventKey="2"
+                className="text-decoration-none text-dark"
+              >
                 ¿Qué colores manejan?
               </Accordion.Toggle>
             </Card.Header>
