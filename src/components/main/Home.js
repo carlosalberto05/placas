@@ -1,10 +1,10 @@
 import React from "react";
-import { Jumbotron, Container, Carousel, Col, Row } from "react-bootstrap";
-import modelo1 from "../../assets/mod1.jpeg";
-import huesos1 from "../../assets/huesos.JPG";
-import modelo2 from "../../assets/mod2.jpeg";
-import huesos2 from "../../assets/brunohueso.png";
-import modelo3 from "../../assets/mod3.jpeg";
+import { Jumbotron, Container, Carousel } from "react-bootstrap";
+
+import Willy from "../../assets/home/wilif2.JPG";
+import placas from "../../assets/home/placas.JPG";
+import Michito from "../../assets/home/michif1.JPG";
+import Bruno from "../../assets/home/bruno.JPG";
 
 import "../../App.css";
 
@@ -14,67 +14,31 @@ export const Home = () => {
       <Jumbotron className="jm-carousel">
         <Container>
           <Carousel>
-            <Carousel.Item interval={15000000000000}>
-              <img
-                className="d-block w-100 carousel__bg"
-                src={modelo1}
-                alt="First slide"
-              />
+            <Carousel.Item interval={2000} className="carousel-item">
+              <img className="fluid w-100 " src={placas} alt="Placas" />
               <Carousel.Caption className="carousel__content">
-                <Row className="carousel__content-row">
-                  <Col className="carousel__content-col" lg={6}>
-                    <img
-                      src={huesos1}
-                      alt="Modelo1"
-                      className="carousel__content-imagenes"
-                    />
-                  </Col>
-                  <Col lg={6}>
-                    <h3 class="carousel_model-name">Modelo 1</h3>
-                    <p class="carousel_model-description">
-                      Diseño de hueso de color blanco con letras negras y huella
-                      negra.
-                    </p>
-                  </Col>
-                </Row>
+                <h3 className="caption-h3">Placas personalizadas</h3>
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item interval={15000000000000}>
-              <img
-                className="d-block w-100 carousel__bg"
-                src={modelo2}
-                alt="First slide"
-              />
+            <Carousel.Item interval={2000} className="carousel-item">
+              <img className="fluid w-100 " src={Bruno} alt="Placas" />
               <Carousel.Caption className="carousel__content">
-                <Row className="carousel__content-row">
-                  <Col className="carousel__content-col" lg={6}>
-                    <img
-                      src={huesos2}
-                      alt="Modelo2"
-                      className="carousel__content-imagenes"
-                    />
-                  </Col>
-                  <Col lg={6}>
-                    <h3 class="carousel_model-name">Modelo 2</h3>
-                    <p class="carousel_model-description">
-                      Diseño de hueso de color negro con letras blancas y huella
-                      blanca.
-                    </p>
-                  </Col>
-                </Row>
+                <h3 className="caption-h3">Con el nombre de tu mascota</h3>
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item>
-              <img className="d-block w-100" src={modelo3} alt="Third slide" />
-
+            <Carousel.Item interval={2000} className="carousel-item">
+              <img className="fluid w-100 " src={Willy} alt="Willy" />
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
+                <h3 className="caption-h3">Placas en forma de hueso</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item interval={2000} className="carousel-item">
+              <img className="fluid w-100" src={Michito} alt="Michito" />
+              <Carousel.Caption className="carousel__content">
+                <h3 className="caption-h3">Placas circulares</h3>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
