@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-/* Productos */
+/* Home carousel */
 .jm-carousel {
   background-color: white;
   padding-top: 0;
@@ -36,10 +36,6 @@
   .carousel-item {
     width: 100%;
     height: 25vh;
-  }
-
-  .image_carousel {
-    object-fit: contain;
   }
 
   .caption-h3 {

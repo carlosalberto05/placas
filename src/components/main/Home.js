@@ -16,14 +16,14 @@ export const Home = () => {
           <Carousel>
             <Carousel.Item interval={2000} className="carousel-item">
               <img className="fluid w-100 " src={placas} alt="Placas" />
-              <Carousel.Caption className="carousel__content">
+              <Carousel.Caption>
                 <h3 className="caption-h3">Placas personalizadas</h3>
               </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item interval={2000} className="carousel-item">
               <img className="fluid w-100 " src={Bruno} alt="Placas" />
-              <Carousel.Caption className="carousel__content">
+              <Carousel.Caption>
                 <h3 className="caption-h3">Con el nombre de tu mascota</h3>
               </Carousel.Caption>
             </Carousel.Item>
@@ -37,7 +37,7 @@ export const Home = () => {
 
             <Carousel.Item interval={2000} className="carousel-item">
               <img className="fluid w-100" src={Michito} alt="Michito" />
-              <Carousel.Caption className="carousel__content">
+              <Carousel.Caption>
                 <h3 className="caption-h3">Placas circulares</h3>
               </Carousel.Caption>
             </Carousel.Item>

@@ -1,66 +1,78 @@
-import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import bruno from "../../assets/bruno.JPG";
-import jordi from "../../assets/jordi.PNG";
-import willi from "../../assets/willi.PNG";
-import mozart from "../../assets/mozart.JPG";
+import React, { useState } from "react";
+import {
+  Container,
+  CardColumns,
+  Card,
+  Button,
+  Modal,
+  Image,
+} from "react-bootstrap";
+import bruno from "../../assets/galeria/bruno.JPG";
+import jordi from "../../assets/galeria/jordi.PNG";
+import william from "../../assets/galeria/willi.PNG";
+import mozart from "../../assets/galeria/mozart.JPG";
 import placagato3 from "../../assets/placagato3.JPG";
-import huesos from "../../assets/huesos.JPG";
+import huesos from "../../assets/galeria/huesos.JPG";
+import brunoNegro from "../../assets/galeria/bruno2.JPG";
+import brunoCollar from "../../assets/galeria/brunohueso.png";
+import huesosDos from "../../assets/galeria/huesos2.JPG";
 import "../../App.css";
+import { nanoid } from "nanoid";
 
 export const Galeria = () => {
+  const [imagen, setImagen] = useState([]);
+  const [show, setShow] = useState(false);
+
+  const imagenes = [
+    {
+      img: brunoCollar,
+      id: "id" + nanoid(),
+    },
+    { img: jordi, id: "id" + nanoid() },
+    { img: bruno, id: "id" + nanoid() },
+    { img: william, id: "id" + nanoid() },
+    { img: mozart, id: "id" + nanoid() },
+    { img: huesosDos, id: "id" + nanoid() },
+    { img: placagato3, id: "id" + nanoid() },
+    { img: huesos, id: "id" + nanoid() },
+    {
+      img: brunoNegro,
+      id: "id" + nanoid(),
+    },
+  ];
+
+  const handleShow = (id) => {
+    const arrayFiltrado = imagenes.filter((item) => item.id === id);
+    setImagen(...arrayFiltrado);
+    setShow(true);
+  };
+
+  const handleClose = () => setShow(false);
+
   return (
     <>
+      <h2 id="galeria" className="text-center">
+        Galería
+      </h2>
       <Container>
-        <div className="mt-5 mb-5" id="galeria">
-          <h2 className="text-center mt-4">Galería</h2>
-        </div>
-        <Row>
-          <Col sm={12} lg={4} className="d-flex justify-content-center ">
-            <Image
-              src={bruno}
-              rounded
-              style={{ width: "200px", height: "200px" }}
-            />
-          </Col>
-          <Col sm={12} lg={4} className="d-flex justify-content-center mt-3">
-            <Image
-              src={willi}
-              rounded
-              style={{ width: "200px", height: "200px" }}
-            />
-          </Col>
-          <Col sm={12} lg={4} className="d-flex justify-content-center mt-3">
-            <Image
-              src={placagato3}
-              rounded
-              style={{ width: "200px", height: "200px" }}
-            />
-          </Col>
-        </Row>
-        <Row className="mt-5">
-          <Col sm={12} lg={4} className="d-flex justify-content-center mt-3">
-            <Image
-              src={huesos}
-              rounded
-              style={{ width: "200px", height: "200px" }}
-            />
-          </Col>
-          <Col sm={12} lg={4} className="d-flex justify-content-center mt-3">
-            <Image
-              src={jordi}
-              rounded
-              style={{ width: "200px", height: "200px" }}
-            />
-          </Col>
-          <Col sm={12} lg={4} className="d-flex justify-content-center mt-3">
-            <Image
-              src={mozart}
-              rounded
-              style={{ width: "200px", height: "200px" }}
-            />
-          </Col>
-        </Row>
+        <CardColumns>
+          {imagenes.map(({ img, id }) => {
+            return (
+              <div key={id}>
+                <Card>
+                  <Button variant="null" onClick={() => handleShow(id)}>
+                    <Card.Img variant="top" src={img} />
+                  </Button>
+                </Card>
+              </div>
+            );
+          })}
+          <Modal show={show} onHide={handleClose} centered>
+            <Modal.Dialog>
+              <Image src={imagen.img} fluid rounded />
+            </Modal.Dialog>
+          </Modal>
+        </CardColumns>
       </Container>
     </>
   );
