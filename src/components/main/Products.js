@@ -1,58 +1,41 @@
 import React from "react";
-import { Container, Jumbotron, Carousel } from "react-bootstrap";
-import carousel from "../../assets/carousel.jpg";
-import carousel2 from "../../assets/carousel2.jpg";
-import carousel3 from "../../assets/carousel3.PNG";
+import { Col, Container, Image, Jumbotron, Row } from "react-bootstrap";
+import Bruno from "../../assets/products/brumo1.jpeg";
+
 import "../../App.css";
 
 export const Products = () => {
   return (
     <div id="products" className="mt-5">
-      <h2 className="text-center">Productos</h2>
+      <h2 className="text-center mb-5">Productos</h2>
       <Jumbotron className="jm-carousel">
         <Container>
-          <Carousel className="stilos-carousel">
-            <Carousel.Item>
-              <img
-                className="d-block w-100  "
-                src={carousel}
-                alt="First slide"
+          <Row>
+            <Col>
+              <h3 className="mb-4">Placas para tu mascota personalizadas</h3>
+              <p className="text-justify">
+                Realizamos placas con el nombre de tu mascota y con un número
+                teléfonico. Contamos con un modelo con forma de hueso para
+                perros y un modelo circular para tu gato.
+              </p>
+            </Col>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Image
+                src={Bruno}
+                rounded
+                style={{
+                  width: "50%",
+                  objectFit: "contain",
+                }}
               />
-              <Carousel.Caption className="stilos-carousel-caption">
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={carousel2}
-                alt="Second slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={carousel3}
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+            </Col>
+          </Row>
         </Container>
       </Jumbotron>
     </div>
