@@ -7,40 +7,35 @@ import Michito from "../../assets/home/michif1.JPG";
 import Bruno from "../../assets/home/bruno.JPG";
 
 import "../../App.css";
+import { nanoid } from "nanoid";
 
 export const Home = () => {
+  const imagenes = [
+    { img: placas, id: "id" + nanoid(), message: "Placas personalizadas" },
+    { img: Bruno, id: "id" + nanoid(), message: "Con el nombre de tu mascota" },
+    { img: Willy, id: "id" + nanoid(), message: "Placas en forma de hueso" },
+    { img: Michito, id: "id" + nanoid(), message: "Placas circulares" },
+  ];
+
   return (
     <div id="home">
       <Jumbotron className="jm-carousel">
         <Container>
           <Carousel>
-            <Carousel.Item interval={2000} className="carousel-item">
-              <img className="fluid w-100 " src={placas} alt="Placas" />
-              <Carousel.Caption>
-                <h3 className="caption-h3">Placas personalizadas</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item interval={2000} className="carousel-item">
-              <img className="fluid w-100 " src={Bruno} alt="Placas" />
-              <Carousel.Caption>
-                <h3 className="caption-h3">Con el nombre de tu mascota</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item interval={2000} className="carousel-item">
-              <img className="fluid w-100 " src={Willy} alt="Willy" />
-              <Carousel.Caption>
-                <h3 className="caption-h3">Placas en forma de hueso</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item interval={2000} className="carousel-item">
-              <img className="fluid w-100" src={Michito} alt="Michito" />
-              <Carousel.Caption>
-                <h3 className="caption-h3">Placas circulares</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
+            {imagenes.map(({ img, id, message }) => {
+              return (
+                <Carousel.Item
+                  key={id}
+                  interval={2000}
+                  className="carousel-item"
+                >
+                  <img className="fluid w-100 " src={img} alt="Placas" />
+                  <Carousel.Caption>
+                    <h3 className="caption-h3">{message}</h3>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              );
+            })}
           </Carousel>
         </Container>
       </Jumbotron>
