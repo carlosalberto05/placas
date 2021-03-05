@@ -23,6 +23,7 @@ export const Galeria = () => {
   const [imagen, setImagen] = useState([]);
   const [show, setShow] = useState(false);
 
+  //Imagenes
   const imagenes = [
     {
       img: brunoCollar,
