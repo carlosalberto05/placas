@@ -9,8 +9,8 @@ export const Main = () => {
   return (
     <main>
       <Home />
-      <Galeria />
       <Products />
+      <Galeria />
       <Preguntas />
     </main>
   );

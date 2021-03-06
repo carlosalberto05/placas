@@ -24,11 +24,7 @@ export const Footer = () => {
               alt="logo"
               style={{ width: "5rem", height: "auto" }}
             />
-            <p>
-              This prodigiously grew tortoise charact stupidly pernicious
-              jeepers along while accordingly under useful much salacious
-              walking fars ...
-            </p>
+            <p>Siguenos en nuetras redes sociales.</p>
           </Col>
           <Col lg={4} sm={12}>
             <h3 className="mb-4">Información de Contacto</h3>

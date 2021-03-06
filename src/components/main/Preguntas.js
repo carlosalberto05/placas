@@ -26,6 +26,12 @@ export const Preguntas = () => {
       eventKey: 3,
       res: ` Por el momento solo manejamos los colores blanco, negro y madera`,
     },
+    {
+      ask: "¿En dónde entregan?",
+      id: "id" + nanoid(),
+      eventKey: 4,
+      res: `Hacemos entregas en Cunduacán y Comalcalco Tabasco `,
+    },
   ];
 
   return (
