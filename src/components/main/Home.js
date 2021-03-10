@@ -8,6 +8,8 @@ import Willy from "../../assets/home/wilif2.JPG";
 import placas from "../../assets/home/placas.JPG";
 import Michito from "../../assets/home/michif1.JPG";
 import Bruno from "../../assets/home/bruno.JPG";
+import hueso8 from "../../assets/home/hue8.JPG";
+import hueso13 from "../../assets/home/hue13.JPG";
 
 import "../../App.css";
 import { nanoid } from "nanoid";
@@ -15,6 +17,8 @@ import { nanoid } from "nanoid";
 export const Home = () => {
   const imagenes = [
     { img: Lis1, id: "id" + nanoid(), message: "Placas personalizadas" },
+    { img: hueso13, id: "id" + nanoid(), message: "Placas personalizadas" },
+    { img: hueso8, id: "id" + nanoid(), message: "Placas personalizadas" },
     {
       img: hueso1,
       id: "id" + nanoid(),

@@ -10,6 +10,7 @@ export const Products = () => {
   return (
     <div id="products" className="mt-5">
       <h2 className="text-center mb-5">Placas</h2>
+
       <Jumbotron className="jm-carousel">
         <Container>
           <Row className="mt-5">
@@ -19,6 +20,7 @@ export const Products = () => {
                 teléfonico. El modelo del huesito cuenta con las siguientes
                 medidas:
               </p>
+
               <p className="text-justify ">Pequeña - 60x24mm</p>
               <p className="text-justify">Mediana - 75x30mm</p>
               <p className="text-justify ">Grande - 90x30mm</p>

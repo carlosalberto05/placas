@@ -28,7 +28,10 @@ import huesos from "../../assets/galeria/huesos.JPG";
 import brunoNegro from "../../assets/galeria/bruno2.JPG";
 import brunoCollar from "../../assets/galeria/brunohueso.png";
 import huesosDos from "../../assets/galeria/huesos2.JPG";
-
+import hue8 from "../../assets/galeria/hue8.JPG";
+import hue10 from "../../assets/galeria/hue10.JPG";
+import hue11 from "../../assets/galeria/hue11.JPG";
+import hue12 from "../../assets/galeria/hue12.JPG";
 import "../../App.css";
 import { nanoid } from "nanoid";
 
@@ -42,6 +45,10 @@ export const Galeria = () => {
       img: brunoCollar,
       id: "id" + nanoid(),
     },
+    { img: hue8, id: "id" + nanoid() },
+    { img: hue10, id: "id" + nanoid() },
+    { img: hue11, id: "id" + nanoid() },
+    { img: hue12, id: "id" + nanoid() },
     { img: jordi, id: "id" + nanoid() },
     { img: bruno, id: "id" + nanoid() },
     { img: mozart, id: "id" + nanoid() },
@@ -87,7 +94,7 @@ export const Galeria = () => {
               <div key={id} className="galeria-card">
                 <Card>
                   <Button variant="null" onClick={() => handleShow(id)}>
-                    <Card.Img variant="top" src={img} />
+                    <Card.Img variant="top" src={img} className="gris" />
                   </Button>
                 </Card>
               </div>
