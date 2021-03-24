@@ -1,15 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhoneAlt,
-  faEnvelope,
-  faMapMarker,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagram,
-  faWhatsapp,
+  faFacebookMessenger,
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/logo.png";
 
@@ -29,10 +25,21 @@ export const Footer = () => {
           <Col lg={4} sm={12}>
             <h3 className="mb-4">Información de Contacto</h3>
             <p>
+              <FontAwesomeIcon icon={faFacebookMessenger} className="mr-2" />
+              <a
+                href="https://m.me/litofaniasyplacas3D"
+                target="_blank"
+                rel="noreferrer"
+                className="text-dark text-decoration-none "
+              >
+                Envíanos un mensaje a Facebook
+              </a>
+            </p>
+            <p>
               <FontAwesomeIcon icon={faMapMarker} className="mr-2" />
               Cunduacán, Tabasco
             </p>
-            <p>
+            {/* <p>
               <a
                 href="tel:+529934366178"
                 className="text-decoration-none text-dark"
@@ -40,7 +47,7 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
                 Cel: 9934366178
               </a>
-            </p>
+            </p> */}
             <p>
               <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
               <a
@@ -69,7 +76,7 @@ export const Footer = () => {
                 Facebook
               </a>
             </p>
-            <p>
+            {/* <p>
               <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
               <a
                 href="https://api.whatsapp.com/send?phone=+529934366178"
@@ -79,7 +86,7 @@ export const Footer = () => {
               >
                 Whatsapp
               </a>
-            </p>
+            </p> */}
           </Col>
         </Row>
       </Container>
