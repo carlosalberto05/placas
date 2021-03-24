@@ -18,12 +18,18 @@ export const Products = () => {
               <p className="text-justify">
                 Realizamos placas con el nombre de tu mascota y con un número
                 teléfonico. El modelo del huesito cuenta con las siguientes
-                medidas:
+                medidas y precios:
               </p>
 
-              <p className="text-justify ">Pequeña - 60x24mm</p>
-              <p className="text-justify">Mediana - 75x30mm</p>
-              <p className="text-justify ">Grande - 90x30mm</p>
+              <p className="text-justify ">
+                Pequeña - 60x24mm - Precio: $100 pesos MX
+              </p>
+              <p className="text-justify">
+                Mediana - 75x30mm - Precio: $115 pesos MX
+              </p>
+              <p className="text-justify ">
+                Grande - 90x30mm - Precio: $130 pesos MX
+              </p>
               <p className="text-justify">
                 En el modelo circular las medidas son: 36x36mm
               </p>
