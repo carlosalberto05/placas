@@ -5,9 +5,17 @@ import { Container, Accordion, Card, Button } from "react-bootstrap";
 export const Preguntas = () => {
   const preguntas = [
     {
-      ask: "¿Que material utilizamos?",
+      ask: "¿Cuál es el precio de las plaquitas?",
       id: "id" + nanoid(),
       eventKey: 1,
+      res: `El precio de las placas pequeñas es de $100 pesos, medianas $115 pesos y grandes $130 pesos. 
+      El modelo con el huesito ancho tiene un costo de $100 pesos 
+      así como el modelo para gato con un costo de $100 pesos`,
+    },
+    {
+      ask: "¿Que material utilizamos?",
+      id: "id" + nanoid(),
+      eventKey: 2,
       res: `El material es un plastico llamado PLA(poliácido láctico) Es un
     termoplástico cuyos materiales de base se obtienen a partir de
     almidón de maíz. Se utiliza ampliamente en la impresión 3D.`,
@@ -15,7 +23,7 @@ export const Preguntas = () => {
     {
       ask: "¿Cuál es el tamaño de las placas?",
       id: "id" + nanoid(),
-      eventKey: 2,
+      eventKey: 3,
       res: `Varían dependiendo del modelo, por ejemplo en el caso del
       huesito las placas pequeñas miden 60x24mm, las medianas 75x30mm,
       y las grandes 90x30mm`,
@@ -23,13 +31,13 @@ export const Preguntas = () => {
     {
       ask: "¿Qué colores manejan?",
       id: "id" + nanoid(),
-      eventKey: 3,
+      eventKey: 4,
       res: ` Por el momento solo manejamos los colores blanco, negro y madera`,
     },
     {
       ask: "¿En dónde entregan?",
       id: "id" + nanoid(),
-      eventKey: 4,
+      eventKey: 5,
       res: `Hacemos entregas en Cunduacán y Comalcalco Tabasco `,
     },
   ];
